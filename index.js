@@ -11,7 +11,7 @@ inherits(TTY, EventEmitter)
 function TTY (game) {
   if (!(this instanceof TTY)) return new TTY(game)
   var self = this
-  this.game = game || {}
+  this.game = game
   this.keysDown = {}
   this.started = false
   if (this.game) {
