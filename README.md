@@ -14,12 +14,26 @@ initialize and log key down events
 
 ```javascript
 var TTY = require('crtrdg-tty')
+var Game = require('gameloop')
 
-var tty = TTY()
+var game = Game()
+var tty = TTY(game)
 
 tty.on('keyDown', function(key) {
 	console.log(key)
 })
+```
+
+you can also initialize without a `gameloop`, just call `start` to begin capturing input
+
+```javascript
+var tty = TTY()
+
+tty.on('keyDown', function (key) {
+	console.log(key)
+})
+
+tty.start()
 ```
 
 to see a simple interactive demo call
@@ -36,8 +50,10 @@ create the tty object
 
 ```javascript
 var TTY = require('crtrdg-tty')
+var Game = require('gameloop')
 
-var tty = TTY()
+var game = Game()
+var tty = TTY(game)
 ```
 
 ### `tty.on('keyDown')`
