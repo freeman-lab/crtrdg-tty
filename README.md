@@ -10,11 +10,23 @@ Useful for testing and debugging core game logic outside the browser, e.g. becau
 
 ## example
 
-call
+initialize the object and 
+
+```javascript
+var TTY = require('crtrdg-tty')
+
+var tty = TTY()
+
+tty.on('keyDown', function(key) {
+	console.log(key)
+})
+```
+
+to see a simple interactive demo call
 
 	npm start
 
-inside this module, press or hold keys to see the associated events
+inside this module, and press or hold keys to see events
 
 ## API
 
