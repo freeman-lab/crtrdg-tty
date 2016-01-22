@@ -10,7 +10,7 @@ Useful for testing and debugging core game logic outside the browser, e.g. becau
 
 ## example
 
-initialize the object and 
+initialize and log key down events
 
 ```javascript
 var TTY = require('crtrdg-tty')
