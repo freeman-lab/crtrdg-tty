@@ -2,7 +2,7 @@
 
 > keyboard module for crtrdg games that works in the terminal
 
-Useful for testing and debugging core game logic outside the browser, e.g. because you have separate modules for game logic and rendering and you want to test gameplay alone in the terminal. Works well with `crtrdg.js` games, but can be used just as well independently. Captures key presses from `stdin` using `keypress` and separates key down and key up events using `debounce`.
+Useful for testing and debugging core game logic outside the browser, e.g. because you have separate modules for game logic and rendering and you want to test gameplay alone in the terminal. Works well with `crtrdg.js` games, but can be used just as well independently. Captures key presses from `stdin` using `[keypress](https://github.com/TooTallNate/keypress)` and separates key down and key up events using `[lodash.debounce](https://github.com/lodash/lodash)`.
 
 ## install
 
