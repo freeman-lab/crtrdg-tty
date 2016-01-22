@@ -44,19 +44,17 @@ var tty = TTY()
 
 key down events
 
-provides a key code for the key pressed from `vkey`
+provides a key code for the key pressed from [`vkey`](https://github.com/chrisdickinson/vkey/)
 
 ### `tty.on('keyUp')`
 
 key up events
 
-provides a key code for the key let up from `vkey`
+provides a key code for the key let up from [`vkey`](https://github.com/chrisdickinson/vkey/)
 
 ### `tty.keysDown`
 
-object with currently pressed keys set to true
-
-**example**
+object with currently pressed keys set to true, e.g.
 
 ```javascript
 tty.on('keyDown', function () {
