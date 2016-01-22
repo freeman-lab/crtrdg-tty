@@ -1,0 +1,36 @@
+{
+  "name": "crtrdg-tty",
+  "version": "1.0.0",
+  "description": "tty keyboard module designed for crtrdg.js games",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "start": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeman-lab/crtrdg-tty.git"
+  },
+  "keywords": [
+    "game",
+    "tty",
+    "keyboard",
+    "server"
+  ],
+  "author": "freeman-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freeman-lab/crtrdg-tty/issues"
+  },
+  "homepage": "https://github.com/freeman-lab/crtrdg-tty#readme",
+  "dependencies": {
+    "eventemitter2": "^0.4.14",
+    "inherits": "^2.0.1",
+    "keycode": "^2.1.0",
+    "lodash.debounce": "^4.0.0",
+    "vkey": "^1.0.0"
+  },
+  "devDependencies": {
+    "gameloop": "^1.1.3"
+  }
+}
