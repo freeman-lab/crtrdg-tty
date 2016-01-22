@@ -3,9 +3,9 @@ var TTY = require('./index')
 
 var game = new Game()
 
-var tty = new TTY(game)
+var tty = new TTY()
 
-var logall = false
+var logall = true
 
 tty.on('keyDown', function (key) {
   console.log('key down: ')
@@ -17,8 +17,8 @@ tty.on('keyUp', function (key) {
   console.log(key)
 })
 
-game.on('update', function (dt) {
-  if (logall) console.log(tty.keysDown)
+game.on('start', function () {
+  tty.start()
 })
 
 game.start()
