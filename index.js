@@ -8,17 +8,12 @@ var vkey = require('vkey')
 module.exports = TTY
 inherits(TTY, EventEmitter)
 
-function TTY (game) {
-  if (!(this instanceof TTY)) return new TTY(game)
+function TTY () {
+  if (!(this instanceof TTY)) return new TTY()
   var self = this
-  this.game = game
   this.keysDown = {}
   this.started = false
-  if (this.game) {
-    self.game.on('start', function () {
-      self.start()
-    })
-  }
+  self.start()
 }
 
 TTY.prototype.start = function () {
